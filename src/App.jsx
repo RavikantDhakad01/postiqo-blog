@@ -7,7 +7,7 @@ import { login, logout } from './store/authslice'
 import authService from './appwrite/auth';
 
 function App() {
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
   const dispatch = useDispatch()
 
   useEffect(() => {
