@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from "react"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
-import { useForm, Watch } from "react-hook-form";
+import { useForm} from "react-hook-form";
 import { Input, Select, Button} from '../index'
 import RTE from '../RTE'
 import Service from '../../appwrite/config'
@@ -33,6 +33,11 @@ function PostForm({ post }) {
 
 
         } else {
+            const existing = await Service.getPost(data.slug)
+            if(existing){
+                alert("Post with same title already exists")
+                return
+            }
             const file = await Service.uploadFile(data.image[0])
             if (file) {
                 const fileId = file.$id
@@ -52,7 +57,7 @@ function PostForm({ post }) {
     }, [])
 
     useEffect(() => {
-        const subscribe = Watch((value, { name }) => {
+        const subscribe = watch((value, { name }) => {
             if (name == 'title') {
                 setValue("slug", slugTransform(value.title), { shouldValidate: true })
             }
