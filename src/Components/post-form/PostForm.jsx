@@ -2,7 +2,8 @@ import { useEffect, useCallback } from "react"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import { useForm, Watch } from "react-hook-form";
-import { Input, Select, Button, RTE } from '../index'
+import { Input, Select, Button} from '../index'
+import RTE from '../RTE'
 import Service from '../../appwrite/config'
 
 function PostForm({ post }) {
