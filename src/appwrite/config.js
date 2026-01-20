@@ -117,7 +117,7 @@ class Service {
 
     getFilePreview(fileId) {
         try {
-            return this.storage.getFilePreview(
+            return this.storage.getFileView(
                 conf.appwriteBuketid,
                 fileId
             )
