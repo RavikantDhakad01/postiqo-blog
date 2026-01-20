@@ -87,7 +87,7 @@ function PostForm({ post }) {
             <div className="w-1/3 px-2">
                 <Input placeholder="featuredImage:" type="file" accept="image/png, image/jpg, image/jpeg, image/gif" {
                     ...register('image', { required: !post })
-                } className="mb-4"/>
+                } className="mb-4 cursor-pointer"/>
                 {
                     post && (
                         <div  className="w-full mb-4">
