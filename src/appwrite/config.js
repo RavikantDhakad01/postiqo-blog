@@ -80,16 +80,12 @@ class Service {
         }
     }
 
-    async getPosts(userId) {
+    async getPosts(Queries=[Query.equal("status", "active")]) {
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
-                [
-                    Query.equal("status", "active"),
-                    Query.equal("userId", userId)
-
-                ]
+                Queries
             )
         } catch (error) {
             console.log("Error in getPosts", error.message);
