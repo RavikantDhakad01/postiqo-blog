@@ -29,17 +29,16 @@ function Header() {
    ]
    return (
       <>
-         <header className='py-3 shadow bg-gray-500'>
+         <header className='shadow bg-gray-600'>
             <Container>
-               <nav className='flex'>
-                  <div className='mr-4'>
-                     <Link to='/'>
-                        <Logo width='70px' />
+               <nav className='flex items-center justify-between py-3'>
+                 
+                     <Link to='/' className='flex items-center'>
+                        <Logo size='w-10' />
                      </Link>
 
-                  </div>
 
-                  <ul className='flex ml-auto'>
+                  <ul className='flex items-center gap-2'>
                      {
                         navItems.map((item) => {
                            return item.active ? (
