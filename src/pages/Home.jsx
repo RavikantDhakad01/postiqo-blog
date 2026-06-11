@@ -23,7 +23,7 @@ const authStatus=useSelector((state)=>state.auth.status)
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
                             <h1 className="text-2xl font-bold hover:text-gray-500">
-                                No post! please create new post to see posts
+                                No posts
                             </h1>
                         </div>
                     </div>

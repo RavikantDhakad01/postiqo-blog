@@ -3,17 +3,17 @@ import Logo from '../Logo'
 
 function Footer() {
   return (
-    <section className="mt-10 py-10 bg-gray-400 border-t border-black">
+    <section className="mt-10 py-10 bg-gray-900 border-t border-black text-white">
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-            <div className="flex h-full flex-col justify-between">
-              <div className="mb-4 flex items-center">
-                <Logo size='w-25' />
+            <div className="flex h-full flex-col ">
+              <div className="mb-4 flex items-center text-4xl font-bold">
+               Ps
               </div>
 
-              <p className="text-sm text-gray-700">
-                &copy;{new Date().getFullYear()}<span className='font-medium'>
+              <p className="text-sm ">
+                &copy;{new Date().getFullYear()}<span className='font-medium ml-2'>
                   postiqo
                 </span> - Built by Ravikant Dhakad
               </p>
@@ -23,7 +23,7 @@ function Footer() {
 
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
 
-            <h3 className="mb-6 text-xs font-semibold uppercase text-gray-500">
+            <h3 className="mb-6 text-base font-bold uppercase ">
               Social
             </h3>
             <ul className='space-y-3'>
@@ -32,7 +32,7 @@ function Footer() {
                   href="https://github.com/RavikantDhakad01"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium "
                 >
                   GitHub
                 </a>
@@ -42,18 +42,18 @@ function Footer() {
                   href="https://www.linkedin.com/in/ravikant-dhakad"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium "
                 >
                   LinkedIn
                 </a>
               </li>
               <li className="mb-4">
-                <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/">
+                <Link className="text-base font-medium " to="/">
                   Affiliate Program
                 </Link>
               </li>
               <li>
-                <Link className="text-base font-medium text-gray-900 hover:text-gray-700" to="/">
+                <Link className="text-base font-medium " to="/">
                   Press Kit
                 </Link>
               </li>
@@ -63,7 +63,7 @@ function Footer() {
 
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
 
-            <h3 className="mb-6 text-xs font-semibold uppercase text-gray-500">
+            <h3 className="mb-6 text-base font-bold uppercase ">
               Support
             </h3>
             <ul>
@@ -92,13 +92,13 @@ function Footer() {
           </div>
 
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-            <h3 className="mb-6 text-xs font-semibold uppercase text-gray-500">
+            <h3 className="mb-6 text-base font-bold uppercase 0">
               Project
             </h3>
             <ul className="space-y-3">
-              <li className="text-base text-gray-800">React</li>
-              <li className="text-base text-gray-800">Appwrite</li>
-              <li className="text-base text-gray-800">Tailwind CSS</li>
+              <li className="text-base ">React</li>
+              <li className="text-base ">Appwrite</li>
+              <li className="text-base ">Tailwind CSS</li>
             </ul>
           </div>
 
